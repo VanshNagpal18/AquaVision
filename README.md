@@ -10,9 +10,6 @@ By applying ML models like Logistic Regression and Random Forest, this project d
 
 The dataset used is the Water Potability Dataset .
 
-Rows: 3,276
-Columns: 10 (9 features + 1 target label)
-
 Target Column:
 
 Potability → 1 (Drinkable), 0 (Not Drinkable)
