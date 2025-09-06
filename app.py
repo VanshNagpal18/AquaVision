@@ -38,6 +38,18 @@ model, scaler, features = load_model()
 # ------------------------------
 st.set_page_config(page_title="💧 Water Quality Prediction", layout="centered")
 
+# Main Header
+st.markdown(
+    """
+    <h1 style="text-align:center; color:#1d3557; font-size:50px; margin-bottom:10px;">
+        🌊 Welcome to <span style="color:#0077b6;">AquaVision</span>
+    </h1>
+    <br><br>
+    """,
+    unsafe_allow_html=True
+)
+
+# App Title + Description
 st.markdown(
     """
     <h1 style="text-align: center; color:#0077b6;">💧 AquaVision </h1>
@@ -93,3 +105,4 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
