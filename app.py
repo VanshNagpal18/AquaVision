@@ -38,13 +38,39 @@ model, scaler, features = load_model()
 # ------------------------------
 st.set_page_config(page_title="💧 Water Quality Prediction", layout="centered")
 
+# Custom CSS for page background
+page_bg = """
+<style>
+.stApp {
+    background: linear-gradient(135deg, #a2d4f4, #e0f7fa);
+    background-attachment: fixed;
+    color: #1d3557;
+}
+</style>
+"""
+st.markdown(page_bg, unsafe_allow_html=True)
+
+
 # Main Header
+# st.markdown(
+#     """
+#     <h1 style="text-align:center; color:#1d3557; font-size:50px; margin-bottom:10px;">
+#         🌊 Welcome to <span style="color:#0077b6;">AquaVision</span>
+#     </h1>
+#     <br><br>
+#     """,
+#     unsafe_allow_html=True
+# )
+
 st.markdown(
     """
-    <h1 style="text-align:center; color:#1d3557; font-size:50px; margin-bottom:10px;">
-        🌊 Welcome to <span style="color:#0077b6;">AquaVision</span>
-    </h1>
-    <br><br>
+    <div style="background: linear-gradient(90deg, #0077b6, #0096c7);
+                padding: 20px; border-radius: 15px; text-align: center; 
+                margin-bottom: 40px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
+        <h1 style="color: white; font-size: 50px; margin: 0;">
+            🌊 Welcome to AquaVision
+        </h1>
+    </div>
     """,
     unsafe_allow_html=True
 )
@@ -105,4 +131,5 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 
